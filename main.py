@@ -18,7 +18,7 @@ while True:
 
     # Dibujar un rectángulo alrededor de cada rostro detectado
     for x, y, w, h in faces:
-        cv2.rectangle(img, (x, y), (x + w, y + h), (255, 0, 0), 2)
+        cv2.rectangle(img, (x, y), (x + w, y + h), (0, 0, 255), 2)
 
     # Mostrar la imagen con los rectángulos dibujados
     cv2.imshow("img", img)
