@@ -3,7 +3,8 @@ import cv2
 
 # cargar el clasificador de Haar
 def load_face_cascade():
-    face_cascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
+    face_cascade = cv2.CascadeClassifier("./data/haarcascade_frontalface_default.xml")
+
     if face_cascade.empty():
         print("Error: No se pudo cargar el clasificador de rostros")
         exit
